@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Page</title>
+
+    <!-- Link to CSS files for styling -->
+    <link rel="stylesheet" href="static/main/css/header.css">
+    <link rel="stylesheet" href="static/main/css/navbar.css">
+    <link rel="stylesheet" href="static/main/css/main.css">
+    <link rel="stylesheet" href="static/main/css/footer.css"> <!-- Footer CSS -->
+</head>
+<body class="projects-page"> <!-- Add class to distinguish this page -->
+    <!-- Header section with banner image -->
+    <header>
+        <img src="static/main/images/banner.jpg" alt="Banner Image" id="banner" loading="lazy"> <!-- Banner image with lazy loading -->
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <!-- Website title or logo -->
+        <div class="nav-title">CSE 477 - Homework 1</div>
+        <!-- Menu toggle button for mobile screens -->
+        <img src="static/main/images/menu-bar.png" alt="Menu" class="menu-toggle"> <!-- Menu icon for navigation -->
+
+        <!-- Navigation links -->
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="static/main/files/resume.pdf">Resume</a></li>
+            <li>
+                <!-- LinkedIn link with icon -->
+                <a href="https://www.linkedin.com/in/anushka-basani-757518226/">
+                    <img src="static/main/images/social-linkedin.png" alt="LinkedIn" class="social-icon">
+                    <span class="linkedin-text">LinkedIn</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main content section for the project listing -->
+    <main>
+        <!-- Introduction section for the projects page -->
+        <section class="projects-intro">
+            <h2>Below is a list of projects I worked on during CSE 477:</h2>
+            <p>Click an image or hyperlink in the description to learn more.</p>
+        </section>
+
+        <!-- Project section with image and description -->
+        <section class="profile">
+            <!-- Left column for project image -->
+            <div class="photo-column">
+                <!-- The image links to the detailed project page -->
+                <a href="piano.html">
+                    <img src="static/main/images/piano.jpeg" alt="Piano Project" class="profile-photo" loading="lazy"> <!-- Project image with lazy loading -->
+                </a>
+            </div>
+            <!-- Right column for project description -->
+            <div class="text-column">
+                <h1>JavaScript Piano</h1>
+                <p>As part of my first Homework assignment in CSE 477, I developed an interactive piano built in pure HTML, CSS, and JavaScript. This tool (in addition to my webpage) highlights my ability to build beautiful and mobile-friendly front-end applications. <a href="piano.html">Click here to see, and play!</a></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer"> <!-- Apply footer class -->
+        <p>&copy; 2024 Anushka Basani</p> <!-- Copyright information -->
+    </footer>
+
+    <!-- Reference the external JavaScript file for navbar interactions -->
+    <script src="static/main/js/navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Great Old One Piano</title>
+
+    <!-- Link to common CSS files for the header, navbar, and footer -->
+    <link rel="stylesheet" href="static/main/css/header.css">
+    <link rel="stylesheet" href="static/main/css/navbar.css">
+    <link rel="stylesheet" href="static/main/css/main.css">
+    <link rel="stylesheet" href="static/main/css/footer.css"> <!-- Footer CSS -->
+    <link rel="stylesheet" href="static/piano/css/piano.css"> <!-- Piano-specific styles -->
+</head>
+<body>
+
+    <!-- Header section with banner image -->
+    <header>
+        <img src="static/main/images/banner.jpg" alt="Banner Image" id="banner" loading="lazy"> <!-- Banner image with lazy loading -->
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <!-- Website title or logo -->
+        <div class="nav-title">CSE 477 - Homework 1</div>
+        <!-- Menu toggle button for mobile screens -->
+        <img src="static/main/images/menu-bar.png" alt="Menu" class="menu-toggle"> <!-- Menu icon for navigation -->
+
+        <!-- Navigation links -->
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="static/main/files/resume.pdf">Resume</a></li>
+            <li>
+                <!-- LinkedIn link with icon -->
+                <a href="https://www.linkedin.com/in/anushka-basani-757518226/">
+                    <img src="static/main/images/social-linkedin.png" alt="LinkedIn" class="social-icon">
+                    <span class="linkedin-text">LinkedIn</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main content section for the piano project -->
+    <main>
+        <!-- Poem section above the piano -->
+        <div class="poem">
+            <p>
+                "Behold piano great and old,<br>
+                its master slumbers in far off cold,<br>
+                If you wish to see anew,<br>
+                call out to it - we see you."
+            </p>
+            <hr class="divider"> <!-- Horizontal divider -->
+        </div>
+
+        <!-- Piano container with keys -->
+        <div class="piano-container">
+            <div class="piano-body">
+                <h2 class="piano-title">The Great Old One</h2>
+
+                <!-- White Keys container -->
+                <div class="white-keys">
+                    <!-- 10 white keys with data-key attributes for keyboard mapping -->
+                    <div class="white-key" id="key1" data-key="A"></div>
+                    <div class="white-key" id="key2" data-key="S"></div>
+                    <div class="white-key" id="key3" data-key="D"></div>
+                    <div class="white-key" id="key4" data-key="F"></div>
+                    <div class="white-key" id="key5" data-key="G"></div>
+                    <div class="white-key" id="key6" data-key="H"></div>
+                    <div class="white-key" id="key7" data-key="J"></div>
+                    <div class="white-key" id="key8" data-key="K"></div>
+                    <div class="white-key" id="key9" data-key="L"></div>
+                    <div class="white-key" id="key10" data-key=";"></div>
+                </div>
+
+                <!-- Black Keys container -->
+                <div class="black-keys">
+                    <!-- 7 black keys with data-key attributes for keyboard mapping -->
+                    <div class="black-key" id="bkey1" data-key="W"></div>
+                    <div class="black-key" id="bkey2" data-key="E"></div>
+                    <div class="black-key" id="bkey3" data-key="T"></div>
+                    <div class="black-key" id="bkey4" data-key="Y"></div>
+                    <div class="black-key" id="bkey5" data-key="U"></div>
+                    <div class="black-key" id="bkey6" data-key="O"></div>
+                    <div class="black-key" id="bkey7" data-key="P"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer"> <!-- Apply footer class -->
+        <p>&copy; 2024 The Great Old One</p> <!-- Copyright information -->
+    </footer>
+
+    <!-- Reference the external JavaScript file for piano interactions -->
+    <script src="static/piano/js/piano.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <!-- Link to CSS files for styling -->
+    <link rel="stylesheet" href="static/main/css/header.css">
+    <link rel="stylesheet" href="static/main/css/navbar.css">
+    <link rel="stylesheet" href="static/main/css/main.css">
+    <link rel="stylesheet" href="static/main/css/footer.css"> <!-- Footer CSS file -->
+</head>
+<body>
+    <!-- Header section with banner image -->
+    <header>
+        <img src="static/main/images/banner.jpg" alt="Banner Image" id="banner" loading="lazy"> <!-- Banner image with lazy loading -->
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <!-- Website title or logo -->
+        <div class="nav-title">CSE 477 - Homework 1</div>
+        <!-- Menu toggle button for mobile screens -->
+        <img src="static/main/images/menu-bar.png" alt="Menu" class="menu-toggle"> <!-- Menu icon for navigation -->
+
+        <!-- Navigation links -->
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="static/main/files/resume.pdf">Resume</a></li>
+            <li>
+                <!-- LinkedIn link with icon -->
+                <a href="https://www.linkedin.com/in/anushka-basani-757518226/">
+                    <img src="static/main/images/social-linkedin.png" alt="LinkedIn" class="social-icon">
+                    <span class="linkedin-text">LinkedIn</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main content section featuring the profile -->
+    <main>
+        <!-- Profile section with photo and description -->
+        <section class="profile">
+            <!-- Left column for profile photo -->
+            <div class="photo-column">
+                <img src="static/main/images/pfp.jpeg" alt="Your Photo" class="profile-photo" loading="lazy"> <!-- Profile image -->
+            </div>
+
+            <!-- Right column for profile text -->
+            <div class="text-column">
+                <h1>Anushka Basani</h1>
+                <p> Anushka Basani is a senior at Michigan State University, majoring in Computer Science, with a passion for solving real-world problems through practical and efficient tech solutions. During her Software Engineering Fellowship at Headstarter AI, Anushka developed AI apps and APIs using Next.js, OpenAI, Pinecone, and Stripe, achieving 98% accuracy across projects used by over 1,000 users. She also collaborates with and mentors fellow engineers, applying industry best practices like Agile methodologies and CI/CD, coached by professionals from Amazon, Bloomberg, and Capital One.</p>
+                <p>Anushka’s internship experience spans across various companies, including SafeSpace and OSI Digital. At SafeSpace, she worked on Python and cloud applications, further honing her skills in backend development and automation. During her time at OSI Digital, Anushka automated repetitive tasks using Python, reducing manual workload by 50% and improving overall team productivity by 25%. She also enhanced project quality by conducting in-depth research on databases, SQL, and Python, contributing valuable insights for robust software solutions.</p>
+                <p>Anushka’s diverse experience in software engineering, full stack development, and leadership positions her as a strong candidate for software engineer, full stack engineer, or frontend developer roles. With expertise in Python, SQL, C++, React, and backend technologies, she is eager to contribute to innovative projects and make a meaningful impact in the tech industry.</p>
+            </div>
+        </section>
+
+        <!-- Fun fact section -->
+        <section class="fun-fact">
+            <h2>A fun fact about me:</h2>
+            <p>All of my fingers are double jointed.</p> <!-- Fun fact text -->
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <p>&copy; 2024 Anushka Basani</p> <!-- Copyright information -->
+    </footer>
+
+    <!-- Reference the external JavaScript file for navbar interactions -->
+    <script src="static/main/js/navbar.js"></script>
+</body>
+</html>
